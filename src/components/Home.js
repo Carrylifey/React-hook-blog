@@ -31,7 +31,7 @@ import {  getDocs,collection } from "firebase/firestore";
 
   return (
     <div className="home">
-      <h1>Welcome To my blog</h1>
+      <h1 style={styles.heading}>Welcome To my blog</h1>
       <div id="blog-by">Subhankar</div>
 
       {posts.map((posts, index) => (
@@ -49,3 +49,11 @@ import {  getDocs,collection } from "firebase/firestore";
 }
 
 export default Home;
+
+
+const styles ={
+  heading: {
+    marginTop :30,
+    fontSize:60,
+  }
+}
